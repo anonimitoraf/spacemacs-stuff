@@ -53,7 +53,7 @@ values."
                       auto-completion-return-key-behavior nil
                       auto-completion-tab-key-behavior 'complete
                       auto-completion-enable-help-tooltip t
-                      auto-completion-enable-snippets-in-popup t)
+                      auto-completion-enable-sn./install-source-code-pro.shippets-in-popup t)
      ;; better-defaults
      git
      ranger
@@ -325,6 +325,8 @@ executes.
  This function is mostly useful for variables that need to be set
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
+  ;; Neotree
+  (setq neo-theme 'icons)
   )
 
 (defun dotspacemacs/user-config ()
@@ -349,8 +351,6 @@ you should place your code here."
   (setq theming-modifications '(spacemacs-dark (default :background "#000")))
   ;; Clojure
   (setq cljr-warn-on-eval nil)
-  ;; Neotree
-  (setq neo-theme 'icons)
   ;; Nyan
   (setq nyan-wavy-trail t)
   ;; Org-mode
@@ -400,7 +400,7 @@ you should place your code here."
     ("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3")))
  '(package-selected-packages
    (quote
-    (company-quickhelp lsp-haskell company-lsp lsp-mode ht dash-functional vmd-mode gmail-message-mode ham-mode html-to-markdown flymd edit-server ranger org-projectile org-category-capture org-present org-pomodoro alert log4e gntp org-mime org-download htmlize gnuplot mmm-mode markdown-toc markdown-mode gh-md all-the-icons memoize tide typescript-mode auto-yasnippet csv-mode rainbow-mode rainbow-identifiers color-identifiers-mode powerline-evil xterm-color shell-pop multi-term eshell-z eshell-prompt-extras esh-help intero hlint-refactor hindent helm-hoogle haskell-snippets flycheck-haskell company-ghci company-ghc ghc haskell-mode company-cabal cmm-mode clojure-snippets clj-refactor inflections edn cider multiple-cursors paredit sesman peg cider-eval-sexp-fu queue parseedn clojure-mode parseclj a cherry-blossom-theme cyberpunk-theme darkburn-theme auto-complete ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline powerline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el paradox spinner org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint indent-guide hydra lv hungry-delete hl-todo highlight-parentheses highlight-numbers parent-mode highlight-indentation helm-themes helm-swoop helm-projectile projectile pkg-info epl helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido flx fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist highlight evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state smartparens evil-indent-plus evil-iedit-state iedit evil-exchange evil-escape evil-ediff evil-args evil-anzu anzu evil goto-chg undo-tree eval-sexp-fu elisp-slime-nav dumb-jump f dash s diminish define-word column-enforce-mode clean-aindent-mode bind-map bind-key auto-highlight-symbol auto-compile packed aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line helm avy helm-core popup async)))
+    (gnu-elpa-keyring-update evil-magit seq smeargle orgit magit-gitflow magit-popup magit helm-gitignore helm-company helm-c-yasnippet gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link fuzzy flyspell-correct-helm flyspell-correct flycheck-pos-tip flycheck transient git-commit with-editor company-statistics pos-tip company yasnippet auto-dictionary ac-ispell company-quickhelp lsp-haskell company-lsp lsp-mode ht dash-functional vmd-mode gmail-message-mode ham-mode html-to-markdown flymd edit-server ranger org-projectile org-category-capture org-present org-pomodoro alert log4e gntp org-mime org-download htmlize gnuplot mmm-mode markdown-toc markdown-mode gh-md all-the-icons memoize tide typescript-mode auto-yasnippet csv-mode rainbow-mode rainbow-identifiers color-identifiers-mode powerline-evil xterm-color shell-pop multi-term eshell-z eshell-prompt-extras esh-help intero hlint-refactor hindent helm-hoogle haskell-snippets flycheck-haskell company-ghci company-ghc ghc haskell-mode company-cabal cmm-mode clojure-snippets clj-refactor inflections edn cider multiple-cursors paredit sesman peg cider-eval-sexp-fu queue parseedn clojure-mode parseclj a cherry-blossom-theme cyberpunk-theme darkburn-theme auto-complete ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline powerline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el paradox spinner org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint indent-guide hydra lv hungry-delete hl-todo highlight-parentheses highlight-numbers parent-mode highlight-indentation helm-themes helm-swoop helm-projectile projectile pkg-info epl helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido flx fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist highlight evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state smartparens evil-indent-plus evil-iedit-state iedit evil-exchange evil-escape evil-ediff evil-args evil-anzu anzu evil goto-chg undo-tree eval-sexp-fu elisp-slime-nav dumb-jump f dash s diminish define-word column-enforce-mode clean-aindent-mode bind-map bind-key auto-highlight-symbol auto-compile packed aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line helm avy helm-core popup async)))
  '(vc-annotate-background "#2B2B2B")
  '(vc-annotate-color-map
    (quote
