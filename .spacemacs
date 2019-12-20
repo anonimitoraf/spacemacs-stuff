@@ -378,6 +378,15 @@ you should place your code here."
   (setq lsp-haskell-process-path-hie "hie-wrapper")
   (require 'lsp-haskell)
   (add-hook 'haskell-mode-hook #'lsp)
+  ;; Workaround for neotree opening when moving windows around
+  (defun move-window-far-right-with-neotree-workaround ()
+    (interactive)
+    (if (neo-global--window-exists-p)
+        (progn (neotree-hide)
+               (evil-window-move-far-right)
+               (neotree-show))
+      (evil-window-move-far-right)))
+  (define-key evil-normal-state-map (kbd "SPC w L") 'move-window-far-right-with-neotree-workaround)
   )
 
 
