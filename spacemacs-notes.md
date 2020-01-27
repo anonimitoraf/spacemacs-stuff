@@ -36,6 +36,7 @@ Change root dir. NOTE: If nothing is selected, a prompt pops up| `R`
 Desc | Keys
 -- | --
 Start REPL | `SPC m s i`
+Clear REPL | `, s c`
 Eval buffer | `SPC m e b`
 Eval region (NOTE: needs evaluated buffer) | `SPC m e r`
 Debug mode | `SPC m d b`

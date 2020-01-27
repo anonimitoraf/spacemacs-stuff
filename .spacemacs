@@ -347,6 +347,9 @@ you should place your code here."
          (define-key evil-insert-state-map (kbd "C-k") nil)))))
   ;; Fix the annoying menu that comes up on pressing ESC
   (global-set-key (kbd "ESC") 'keyboard-quit)
+  ;; Workaround for not being able to open shell
+  ;; See https://github.com/syl20bnr/spacemacs/issues/7446
+  (setq shell-default-full-span nil)
   ;; Themes
   (setq theming-modifications '(spacemacs-dark (default :background "#000")))
   ;; Clojure
