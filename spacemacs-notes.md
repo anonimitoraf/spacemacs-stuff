@@ -5,8 +5,9 @@
 Desc | Keys
 -- | --
 Un/comment lines | `SPC c l`
-Visual surround | `s <char>`
+Visual surround | `s <char>` 
 Search for a file | `SPC f f`
+Open file (after searching for it) | `C-c o`
 Clear contents of helm input | `C M B-SPC`
 Open file in a split window from helm | `C-c o`
 Go to definition | `g d`
@@ -19,6 +20,7 @@ Search command by keybindings | `C-h b`
 (Un\|Re)do window layout | `C-c` `Left`/`Right`
 Bring selected line on top/middle/bottom of window | `zt`/`zz`/`zb`
 Move selected line 1 upwards/downwards the window | `C-e`/`C-y`
+Indent region | `SPC j =`
 
 ---
 ## Neotree
@@ -65,6 +67,7 @@ Desc | Keys
 -- | --
 Un/Wrap | `W` \ `w`
 Slurp backward/forward | `S` \ `s`
+Barf backward/forward | `B` \ `b`
 
 ### Help (`SPC m h`)
 Desc | Keys
