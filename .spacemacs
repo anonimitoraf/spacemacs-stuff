@@ -334,8 +334,10 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
+
   ;; Show Neotree by default
   (neotree-show)
+
   ;; (spacemacs/toggle-highlight-current-line-globally-off)
   ;; Temporary fix for C-k not working for auto-completion options with
   ;; help popups. See https://github.com/syl20bnr/spacemacs/issues/2974
@@ -345,8 +347,10 @@ you should place your code here."
      (when evil-mode
        (when (evil-insert-state-p)
          (define-key evil-insert-state-map (kbd "C-k") nil)))))
+
   ;; Fix the annoying menu that comes up on pressing ESC
   (global-set-key (kbd "ESC") 'keyboard-quit)
+
   ;; Workaround for not being able to open shell
   ;; See https://github.com/syl20bnr/spacemacs/issues/7446
   (setq shell-default-full-span nil)
