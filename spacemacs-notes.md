@@ -13,7 +13,6 @@ Open file in a split window from helm | `C-c o`
 Go to definition | `g d`
 Go to definition (other window) | `g D`
 Toggle cursor 1 position back and forth | `''`
-Close buffer | `SPC b d`
 Close window | `SPC w d`
 Open terminal | `SPC '`
 Search command by keybindings | `C-h b`
@@ -21,6 +20,17 @@ Search command by keybindings | `C-h b`
 Bring selected line on top/middle/bottom of window | `zt`/`zz`/`zb`
 Move selected line 1 upwards/downwards the window | `C-e`/`C-y`
 Indent region | `SPC j =`
+Indent region (more comprehensive but takes longer) | `SPC m =`
+Open dotfile | `SPC f e d`
+
+---
+## Buffers (`SPC b)`
+Desc | Keys
+-- | --
+Show all | `b`
+Next | `n`
+Previous | `p`
+Close | `d`
 
 ---
 ## Neotree
@@ -38,7 +48,7 @@ Change root dir. NOTE: If nothing is selected, a prompt pops up| `R`
 Desc | Keys
 -- | --
 Start REPL | `SPC m s i`
-Clear REPL | `, s c`
+Clear REPL | `SPC m s c`
 Eval buffer | `SPC m e b`
 Eval region (NOTE: needs evaluated buffer) | `SPC m e r`
 Debug mode | `SPC m d b`
