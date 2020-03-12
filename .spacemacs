@@ -38,7 +38,9 @@ values."
      ;; ----------------------------------------------------------------
      emacs-lisp
      (clojure :variables
-              clojure-enable-fancify-symbols t)
+              clojure-enable-fancify-symbols t
+              clojure-enable-clj-refactor t
+              clojure-enable-sayid t)
      (haskell :variables
               haskell-completion-backend 'ghci
               haskell-process-type 'stack-ghci)
@@ -113,7 +115,7 @@ values."
    ;; when the current branch is not `develop'. Note that checking for
    ;; new versions works via git commands, thus it calls GitHub services
    ;; whenever you start Emacs. (default nil)
-   dotspacemacs-check-for-update nil
+   dotspacemacs-check-for-update t
    ;; If non-nil, a form that evaluates to a package directory. For example, to
    ;; use different package directories for different Emacs versions, set this
    ;; to `emacs-version'.
@@ -334,9 +336,6 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
-
-  ;; Show Neotree by default
-  (neotree-show)
 
   ;; (spacemacs/toggle-highlight-current-line-globally-off)
   ;; Temporary fix for C-k not working for auto-completion options with
