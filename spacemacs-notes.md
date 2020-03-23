@@ -84,7 +84,7 @@ Barf backward/forward | `B` \ `b`
 Desc | Keys
 -- | --
 Apropos (Shows related functions, etc) | `a`
-Doc (NOTE: If cursor is on symbol, shows doc for symbol)| `h`
+Doc (NOTE: If cursor is on symbol, shows doc for symbol)| `h` (or `S-k`)
 Browse namespace | `n`
 
 ---
