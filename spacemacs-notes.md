@@ -41,6 +41,28 @@ Delete file/dir | `C-c C-d`
 Rename file/dir | `C-c C-r`
 Change root dir. NOTE: If nothing is selected, a prompt pops up| `R`
 
+---
+## Org-mode
+Desc | Keys
+-- | --
+New bullet point | `C-Enter`
+Fold/unfold cycle | `Tab`
+Fold/unfold cycle (whole file) | `S-Tab`
+Moving bullet points with children following | `M-<vim-nav-keys>`
+Task/Done cycle for bullet point | `t`
+Only show tasks | `, T`
+Show tasks completion count | Insert next to heading `[/]` then `, ,`
+Show tasks completion percent | Insert next to heading `[%]` then  `, ,`
+Create task  | `- [ ] <Task Description>`
+Mark task as done | `, ,`
+Add file to agenda | `C-c [`
+Open options for agenda | `SPC a o o`
+Agenda view | `SPC a o a`
+Todo view | `SPC a o t`
+Move forward/backward in agenda view | `b`/`f`
+Create deadline | `, d`
+Create start time  | `, s`
+Export | `, e e`
 
 ---
 ## Clojure
